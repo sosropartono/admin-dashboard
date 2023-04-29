@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,81 +8,205 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div class="left">
-        <div class="icon"><p>Dashboard</p></div>
+        <div class="dash">
+            <a href="index.html"><img class="dash-icon" src="imgs/view-dashboard.svg" alt=""></a>
+            <h2 class="actually-inline">Dashboard</h2>
+        </div>
+
         <div class="">
             <ul>
-                <li class="sidebar-content">Home</li>
-                <li class="sidebar-content">Profile</li>
-                <li class="sidebar-content">Messages</li>
-                <li class="sidebar-content">History</li>
-                <li class="sidebar-content">Tasks</li>
-                <li class="sidebar-content">Communities</li>
+                <a href="index.html">
+                    <li class="sidebar-content">Home</li>
+                </a>
+                <a href="index.html">
+                    <li class="sidebar-content">Profile</li>
+                </a>
+                <a href="index.html">
+                    <li class="sidebar-content">Messages</li>
+                </a>
+                <a href="index.html">
+                    <li class="sidebar-content">History</li>
+                </a>
+                <a href="index.html">
+                    <li class="sidebar-content">Tasks</li>
+                </a>
+                <a href="index.html">
+                    <li class="sidebar-content">Communities</li>
+                </a>
             </ul>
         </div>
         <div class="">
             <ul>
-                <li class="sidebar-content">Settings</li>
-                <li class="sidebar-content">Support</li>
-                <li class="sidebar-content">Privacy</li>
+                <a href="index.html">
+                    <li class="sidebar-content">Settings</li>
+                </a>
+                <a href="index.html">
+                    <li class="sidebar-content">Support</li>
+                </a>
+                <a href="index.html">
+                    <li class="sidebar-content">Privacy</li>
+                </a>
             </ul>
         </div>
     </div>
 
     <div class="right">
         <div class="top-right">
-            <form action="post" target="index.html">
-                <label for="search">Search Icon<input class="search"  type="text"></label>
-            </form>
-        <div class="notification-bell">Notification bell</div>
-        <div class="user-icon">User Icon</div>
-        <p class="name">Morgan Oakley</p>
-        </div>
-        
-
-        <div class="user-interaction top-right">
-            <div>
-                <div>user icon</div>
-                <p>Hi there</p>
-                <p>Megan Oakley</p>
+            <div class="user-nav">
+                <label for="search" class="search"><img src="imgs/magnify.svg" alt=""><input type="text"></label>
+                <div class="nav-items">
+                    <img src="imgs/bell-outline.svg" alt="">
+                    <img src="imgs/flower.png" alt="">
+                    <span class="name">Morgan Oakley</span>
+                </div>
             </div>
 
-            <div>
 
-            </div>
-            <div>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="user-interaction">
+                <div class="user-greeting">
+                    <img class="icon-big" src="imgs/flower.png" alt="">
+                    <div class="actually-inline">
+                        <p>Hi there,</p>
+                        <h1>Megan Oakley</h1>
+                    </div>
+                </div>
+
+
+                <div class="interaction-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
 
         <div class="bottom-right">
             <div class="projects">
-                <p>Your Projects</p>
-                <div class="project-card"><p>super cool proj</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium necessitatibus</p></div>
-                <div class="project-card"><p>super cool proj</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium necessitatibus</p></div>
-                <div class="project-card"><p>super cool proj</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium necessitatibus</p></div>
-                <div class="project-card"><p>super cool proj</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium necessitatibus</p></div>
-                <div class="project-card"><p>super cool proj</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium necessitatibus</p></div>
-                <div class="project-card"><p>super cool proj</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium necessitatibus</p></div>
+                <h1>Your Projects</h1>
+                <div class="cards-container">
+                    <div class="project-card">
+                        <h2 class="card-desc">super cool proj</h2>
+                        <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium
+                            necessitatibus
+                        </p>
+                        <div class="card-set card-desc">
+                            <img class="icon" src="imgs/star-plus.svg" alt="">
+                            <img class="icon" src="imgs/eye-plus-outline.svg" alt="">
+                            <img class="icon" src="imgs/share-variant-outline.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h2 class="card-desc">super cool proj</h2>
+                        <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium
+                            necessitatibus
+                        </p>
+                        <div class="card-set card-desc">
+                            <img class="icon" src="imgs/star-plus.svg" alt="">
+                            <img class="icon" src="imgs/eye-plus-outline.svg" alt="">
+                            <img class="icon" src="imgs/share-variant-outline.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h2 class="card-desc">super cool proj</h2>
+                        <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium
+                            necessitatibus
+                        </p>
+                        <div class="card-set card-desc">
+                            <img class="icon" src="imgs/star-plus.svg" alt="">
+                            <img class="icon" src="imgs/eye-plus-outline.svg" alt="">
+                            <img class="icon" src="imgs/share-variant-outline.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h2 class="card-desc">super cool proj</h2>
+                        <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium
+                            necessitatibus
+                        </p>
+                        <div class="card-set card-desc">
+                            <img class="icon" src="imgs/star-plus.svg" alt="">
+                            <img class="icon" src="imgs/eye-plus-outline.svg" alt="">
+                            <img class="icon" src="imgs/share-variant-outline.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h2 class="card-desc">super cool proj</h2>
+                        <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium
+                            necessitatibus
+                        </p>
+                        <div class="card-set card-desc">
+                            <img class="icon" src="imgs/star-plus.svg" alt="">
+                            <img class="icon" src="imgs/eye-plus-outline.svg" alt="">
+                            <img class="icon" src="imgs/share-variant-outline.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h2 class="card-desc">super cool proj</h2>
+                        <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laudantium
+                            necessitatibus
+                        </p>
+                        <div class="card-set card-desc">
+                            <img class="icon" src="imgs/star-plus.svg" alt="">
+                            <img class="icon" src="imgs/eye-plus-outline.svg" alt="">
+                            <img class="icon" src="imgs/share-variant-outline.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="">
+            <div class="announce-trend">
                 <div class="announcements">
-                    <h5>Announcements</h5>
-                    <div class="t-card"></div>
+                    <h3>Announcements</h3>
+                    <div class="t-card">
+                        <p>IOJFEOIJFOEJFOIJFEOJFI</p>
+                        <hr>
+                        <p>IOJFEOIJFOEJFOIJFEOJFIO</p>
+                        <hr>
+                        <p>IOJFEOIJFOEefafeaefeaf</p>
+                    </div>
                 </div>
                 <div class="trending">
-                    <h5>Trending</h5>
-                    <div class="t-card"></div>
+                    <h3>Trending</h3>
+                    <div class="t-card">
+                        <div class="user ">
+                            <img src="imgs/flower.png" alt="">
+                            <div class="actually-inline">
+                                <h5>@teagan</h5>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="user space">
+                            <img src="imgs/flower.png" alt="">
+                            <div class="actually-inline">
+                                <h5>@morgan</h5>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="user space">
+                            <img src="imgs/flower.png" alt="">
+                            <div class="actually-inline">
+                                <h5>@kendall</h5>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="user space">
+                            <img src="imgs/flower.png" alt="">
+                            <div class="actually-inline">
+                                <h5>@alex</h5>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
 
-    
+
 </body>
+
 </html>
